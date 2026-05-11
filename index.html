@@ -64,6 +64,7 @@
             text-align: center;
             cursor: pointer;
             transition: 0.2s;
+            
         }
         .upload-box:hover { background: #252629; border-color: var(--accent-color); }
         .upload-box i { font-size: 20px; color: var(--accent-color); margin-bottom: 8px; }
@@ -89,9 +90,11 @@
         .btn-primary {
             background: var(--accent-color);
             color: #fff; border: none; padding: 14px; border-radius: 8px; font-weight: 600; cursor: pointer;
+            -webkit-tap-highlight-color:transparent;
         }
         .btn-secondary {
             background: transparent; color: var(--text-main); border: 1px solid var(--border-color); padding: 10px; border-radius: 8px; cursor: pointer;
+            -webkit-tap-highlight-color:transparent;
         }
 
         /* --- Main Content --- */
@@ -162,7 +165,7 @@
         <div class="control-group">
             <div class="group-title"><lang-th>คอนทราสต์</lang-th><lang-en>Contrast</lang-en></div>
             <div class="slider-item">
-                <div class="slider-header"><label>Contrast</label> <span id="contrastVal">0</span>%</div>
+                <div class="slider-header"><label>Contrast</label> <span id="contrastVal"></span>%</div>
                 <input type="range" id="contrast" min="-100" max="100" value="0">
             </div>
         </div>
